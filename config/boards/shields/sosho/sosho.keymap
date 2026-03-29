@@ -114,7 +114,6 @@ keymap {
             &trans &trans                             &trans &trans    &trans     &trans                       &trans &trans
         >;
     };
-
         extra2 {
         bindings = <
             &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
