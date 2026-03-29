@@ -115,8 +115,13 @@ keymap {
         >;
     };
 
-    extra2 {
-        status = "reserved";
+        extra2 {
+        bindings = <
+            &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+            &trans &trans                            &trans &trans     &trans &trans                    &trans &trans
+        >;
     };
 };
 };
