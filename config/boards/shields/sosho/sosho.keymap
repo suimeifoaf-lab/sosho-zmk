@@ -106,8 +106,13 @@ keymap {
             &trans &trans               &trans &trans      &trans  &out OUT_BLE                                    &trans         &trans
         >;
     };
-    scroll {
-        status = "reserved";
+        scroll {
+        bindings = <
+            &trans &trans &trans &trans &trans &trans      &trans     &trans     &trans     &trans     &trans &trans
+            &trans &trans &trans &trans &trans &trans      &trans     &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5  &trans
+            &trans &trans &trans &trans &trans &trans      &trans     &trans     &trans     &trans     &trans &trans
+            &trans &trans                             &trans &trans    &trans     &trans                       &trans &trans
+        >;
     };
 
     extra2 {
