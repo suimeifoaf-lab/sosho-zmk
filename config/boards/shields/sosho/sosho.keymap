@@ -1,5 +1,5 @@
 //スクロール量の調整(デフォルト150)
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 11
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
