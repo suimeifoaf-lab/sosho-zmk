@@ -1,6 +1,14 @@
 #include "sosho_R.dtsi"
 #include <input/processors.dtsi>
 
+/ {
+    /omit-if-no-ref/ my_mouse_layer: my_mouse_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+        require-prior-idle-ms = <200>;
+    };
+};
+
 &spi1 { status = "okay"; };
 &trackball { status = "okay"; };
 
@@ -8,16 +16,12 @@
     status = "okay";
     input-processors = <
         &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-        &zip_xy_scaler 3 4
-        &zip_temp_layer 4 800
+        &my_mouse_layer 4 800
     >;
 
     scroll_mode {
         layers = <5>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 15
-        >;
+        input-processors = <&zip_xy_to_scroll_mapper>;
     };
 };
 
